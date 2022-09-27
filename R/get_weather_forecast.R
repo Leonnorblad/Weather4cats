@@ -12,10 +12,10 @@
 #' 
 #' @examples
 #' # Weather forecast for Stockholm today.
-#' get_weather_forecast(city="Uppsala", date=Sys.Date()) 
+#' get_weather_forecast(city="Stockholm", date=Sys.Date()) 
 #' 
 #' # Weather forecast for Göteborg tomorrow.
-#' get_weather_forecast(city="Uppsala", date=Sys.Date()+1)
+#' get_weather_forecast(city="Göteborg", date=Sys.Date()+1)
 #' 
 #' @references Open-Meteo. Weather Forecast API. \url{https://open-meteo.com/en/docs}
 #' 
@@ -24,7 +24,7 @@
 get_weather_forecast <- function(city,
                                  date){
   if(date>Sys.Date()+7|date<Sys.Date()){stop("False date input")}
-  if(city=="Linkoping"){
+  if(city=="Link\u00f6ping"){
     latitude <- 58.41
     longitude <- 15.62
   } else if (city=="Stockholm"){
@@ -33,10 +33,10 @@ get_weather_forecast <- function(city,
   } else if (city=="Uppsala"){
     latitude <- 59.86
     longitude <- 17.64
-  } else if (city=="Malmo"){
+  } else if (city=="Malm\u00f6"){
     latitude <- 55.60
     longitude <- 13.00
-  } else if (city=="Goteborg"){
+  } else if (city=="G\u00f6teborg"){
     latitude <- 57.71
     longitude <- 11.97
   } else {
