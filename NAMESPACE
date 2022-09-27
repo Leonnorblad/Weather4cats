@@ -3,4 +3,3 @@
 export(get_weather_forecast)
 import(httr)
 import(jsonlite)
-import(stringi)
