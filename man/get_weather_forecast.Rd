@@ -19,12 +19,12 @@ Weather forecast data for five large cities in Sweden. Could be used with a shin
 }
 \examples{
 # Weather forecast for Stockholm today.
-get_weather_forecast(city="Stockholm", date=Sys.Date()) 
+get_weather_forecast(city="Uppsala", date=Sys.Date()) 
 
 # Weather forecast for Göteborg tomorrow.
-get_weather_forecast(city="Göteborg", date=Sys.Date()+1)
+get_weather_forecast(city="Uppsala", date=Sys.Date()+1)
 
 }
 \references{
-Open-Meteo \url{https://open-meteo.com/en/docs}
+Open-Meteo. Weather Forecast API. \url{https://open-meteo.com/en/docs}
 }

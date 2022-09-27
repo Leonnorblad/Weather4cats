@@ -9,3 +9,13 @@ Description: Contains weather forecast data for five large cities in Sweden. Cou
 License: GPL-3 + file LICENSE
 Encoding: UTF-8
 RoxygenNote: 7.2.1
+Imports: 
+    httr,
+    jsonlite,
+    stringi
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr

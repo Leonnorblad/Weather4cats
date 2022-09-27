@@ -1,0 +1,67 @@
+---
+title: "Weather forecast API"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Weather forecast API}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Weather forecast data for five large cities in Sweden. Could be used with a shiny application.
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Weather4cats)
+```
+## The input
+To use the function, a city and a date must be inputted.
+
+### City
+The city has start with a uppercase letter. The valid cities are:
+
+* Stockholm
+* Göteborg
+* Mölmö
+* Uppsala
+* Linköping
+
+### Date
+The date has to be encoded as "YYYY-MM-DD" and could be between today and seven days ahead.
+
+## The output
+The output is a data.frame with 24 rows and 8 columns containing hourly information for the following variables:
+
+* Time (every hour of the requested day)
+* Temperature (Degrees Celsius)
+* Humidity (%)
+* Precipitation (millimeter)
+* Cloudcover (%)
+* Wind speed (meter/second)
+* Wind direction (degrees)
+* City (from input)
+
+## Example
+```{r}
+# Requesting the weather forecast for Uppsala, today.
+# Call:
+example <- get_weather_forecast(city="Uppsala", date=Sys.Date())
+
+# Structure
+str(example)
+
+# First three rows
+print(head(example, 3))
+
+# Last tree rows of example
+print(tail(example, 3))
+
+# Short summary
+summary(example)
+
+```
+
