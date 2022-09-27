@@ -11,8 +11,7 @@ Encoding: UTF-8
 RoxygenNote: 7.2.1
 Imports: 
     httr,
-    jsonlite,
-    stringi
+    jsonlite
 Suggests: 
     knitr,
     rmarkdown,
