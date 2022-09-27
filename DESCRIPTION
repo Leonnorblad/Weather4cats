@@ -1,0 +1,11 @@
+Package: Weather4cats
+Type: Package
+Title: API for weather forecast
+Version: 1.0
+Date: 2022-09-27
+Author: Leonard Persson Norblad & Jacob Sibanda
+Maintainer: Leonard Persson Norblad <leope744@student.liu.se> Jacob Sibanda <jacsi259@student.liu.se>
+Description: Contains weather forecast data for five large cities in Sweden. Could be used with a shiny application. 
+License: GPL-3 + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
