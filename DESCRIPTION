@@ -10,8 +10,11 @@ License: GPL-3 + file LICENSE
 Encoding: UTF-8
 RoxygenNote: 7.2.1
 Imports: 
+    ggplot2,
     httr,
-    jsonlite
+    jsonlite,
+    lubridate,
+    stringr
 Suggests: 
     knitr,
     rmarkdown,
