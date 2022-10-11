@@ -2,7 +2,7 @@
 #' 
 #' Weather forecast data for five large cities in Sweden. Could be used with a shiny application.
 #' 
-#' @import httr jsonlite stringr lubridate ggplot2
+#' @import httr jsonlite
 #' 
 #' @param city A string of a city with an uppercase for the first letter
 #' 
